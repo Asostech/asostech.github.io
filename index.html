@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OFOET Nigeria Ltd – Solar & Surveillance</title>
+
+    <!-- Font Awesome (Auto social media logos) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- STYLES -->
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f8f9fa;
+            color: #0c3c59;
+        }
+
+        header {
+            padding: 20px;
+            background: #0c3c59;
+            color: white;
+            text-align: center;
+        }
+
+        header img {
+            width: 120px;
+            margin-bottom: 10px;
+        }
+
+        nav {
+            background: #074867;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #25d366;
+        }
+
+        /* Hero */
+        .hero {
+            background: url('images/poster.jpeg') center/cover no-repeat;
+            height: 350px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            font-size: 35px;
+            font-weight: bold;
+        }
+
+        /* Sections */
+        section {
+            padding: 40px 10%;
+        }
+
+        .services img, .gallery img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .services, .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        /* Social Links */
+        .social-links {
+            text-align: center;
+        }
+
+        .social-links a {
+            margin: 10px;
+            font-size: 35px;
+            color: #074867;
+        }
+
+        .social-links a:hover {
+            color: #25d366;
+        }
+
+        footer {
+            background: #0c3c59;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Animations */
+        .fade-in {
+            opacity: 0;
+            animation: fadeIn 1.5s forwards;
+        }
+
+        @keyframes fadeIn {
+            100% { opacity: 1; }
+        }
+
+        .slide-up {
+            opacity: 0;
+            transform: translateY(40px);
+            animation: slideUp 1.5s forwards;
+        }
+
+        @keyframes slideUp {
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Floating WhatsApp */
+        .whatsapp-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 25px;
+            right: 25px;
+            background: #6225d3;
+            color: white;
+            border-radius: 50%;
+            text-align: center;
+            font-size: 35px;
+            padding-top: 12px;
+            z-index: 100;
+        }
+
+        .whatsapp-float:hover {
+            background: #1ebe5d;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="fade-in">
+        <img src="images/logo.png.jpeg" alt="Company Logo" class="logo">
+        <h1>OFOET NIG</h1>
+        <p>RC: 7101704 — Panels, inverters, batteries and maintenance plans with trusted brands and certified technicians.</p>
+    </header>
+
+    <!-- NAVIGATION -->
+    <nav>
+        <a href="#services">Services</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#video">Video</a>
+        <a href="#contact">Contact</a>
+        <a href="#iframe">Map</a>
+        <a href="#about">About us</a>
+        <a href="#why">Why Choose Us</a>
+    </nav>
+    <!-- HERO -->
+    <div class="hero slide-up" style="color: blue">
+        Reliable Solar & CCTV Itallations
+    </div>ns
+
+    <!-- SERVICES -->
+    <section id="services" class="fade-in">
+        <h2>Our Services</h2>
+        <div class="services">
+            <div>
+                <img src="images/solar.jpeg" alt="Solar Installation" width="20">
+                <h3>Solar Installation</h3>
+            </div>
+
+            <div>
+                <img src="images/cctv.jpeg" alt="CCTV Installation" width="20">
+                <h3>Surveillance & CCTV</h3>
+            </div>
+
+            <div>
+                <img src="images/inverter.jpeg" alt="Inverter Systems" width="20">
+                <h3>Inverter & Battery Solutions</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section id="gallery" class="slide-up">
+        <h2>Project Gallery</h2>
+        <div class="gallery">
+            <img src="images/solar2.jpeg" alt="Completed the installation of this 10kva system with 15kwh li-ion battery">
+            <img src="images/panel.jpeg">
+            <img src="images/cctv2.jpeg">
+        </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section id="gallery" class="slide-up">
+        <h2>Recent Projects</h2>
+        <div class="gallery">
+            <img src="images/solar4.jpg" alt="Completed the installation of this 10kva system with 15kwh li-ion battery">
+            <img src="images/solar5.jpg">
+            <img src="images/solar3.jpg">
+        </div>
+    </section>
+
+    <!-- VIDEO -->
+    <section id="video" class="fade-in">
+        <h2>Company Video</h2>
+       <div class="video-group">
+  <video controls>
+    <source src="videos/solar1.mp4" type="video/mp4">
+  </video>
+
+  <video controls>
+    <source src="videos/solar2.mp4" type="video/mp4">
+  </video>
+
+  <video controls>
+    <source src="videos/solar33.mp4" type="video/mp4">
+  </video>
+</div>
+
+<style>
+  .video-group {
+    background: green;          /* background color */
+    padding: 20px;              /* space around videos */
+    display: flex;
+    gap: 20px;                  /* space between videos */
+    justify-content: center;    /* centers the videos */
+    align-items: center;        /* vertical centering */
+  }
+
+  .video-group video {
+    width: 250px;               /* adjust size as needed */
+    height: auto;
+    display: block;
+  }
+</style>
+    </section>
+
+    <!-- MAP / IFRAME -->
+    <section id="iframe" class="slide-up">
+        <h2>Our Location</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3953.0000000000005!2d7.3870!3d6.8680!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNsukka%20Enugu%20State%2C%20Nigeria!5e0!3m2!1sen!2sng!4v0000000000000" width="100%" height="300" style="border:0;"></iframe>
+    </section>
+   
+    <!--About Us-->
+    <section id="about" style="background: green; color: white; padding: 40px;">
+    <h2>About Us</h2>
+    <p>At OFOET NIG LTD, our primary focus is delivering affordable, high-quality solar renewable energy solutions and materials. We provide a wide range of products and services including power hybrid inverters, smart CCTV cameras, secure access control systems, electrical installations, and facilities management for homeowners and businesses across Nigeria.
+
+Whether you have a large family or a high-energy household, we are here to meet your power needs.
+
+We are a specialist solar energy company committed to sustainable, reliable, and cost-effective PV solutions. Our team is made up of certified engineers and electricians who design and install systems that comply with both local regulations and international standards.
+    </p>
+    <div>
+    <ul class="text-white-90 mb-0">
+          <li>Certified installation teams</li>
+          <li>Warranty-backed equipment</li>
+          <li>Site surveys &amp; custom designs</li>
+        </ul>
+      </div>
+</section>
+<!--Why Choose Us-->
+    <section id="why" style="background: #074867; color: white; padding: 40px;">
+        <h2>Why Choose Us</h2>
+        <p>OFOET NIG LTD provides clean, reliable, and cost-saving on-site solar solutions that cut carbon emissions, boost energy security, and help homes, businesses and institutions meet sustainability goals.
+It also supports local communities through ethical, unionized domestic supply chains and targeted community investments.</p>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" style="background: black; color: white; padding: 40px;">
+        <h2>Contact Us</h2>
+
+        <p><strong>Head Office:</strong> Nsukka local government Area, 34/35 Onuiyi Junction link road Nsukka Onuiyi Junction transformer, Carmelite road, Nsukka, Enugu, Nigeria</p>
+        <p><strong>Branch Office:</strong> 1 New Ogige Market, Aku Rd Nsukka</p>
+        <p><strong>Email:</strong> ofoetnigltd@gmail.com</p>
+        <p><strong>Phone:</strong> +234 8032807393</p>
+
+        <div class="social-links">
+            <a href="https://facebook.com/profile.php?id=100063884890800" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://wa.me/2348032807393?text=Hello%20welcome%20to%20OFOET%20Nigeria%20Ltd%20" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <a href="mailto:ofoetnigltd@gmail.com"><i class="fas fa-envelope"></i></a>
+            
+        </div>
+
+        <br><br>
+        <h3>Designed by</h3>
+        <a href="https://wa.me/2348103650661?text=Hello%20Developer%2C%20I%20need%20your%20help%20with%20my%20website" target="_blank">
+            <i class="fab fa-whatsapp"></i> Asostech
+        </a>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        © 2025 OFOET Nigeria Limited — All Rights Reserved.
+    </footer>
+
+    <!-- FLOATING COMPANY WHATSAPP -->
+    <a href="https://wa.me/2348032807393?text=Hello%20Welcome%20to%20OFOET%20Nigeria%20Ltd%20How%20may%20we%20help%20you%20today?"
+       class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+</body>
+</html>
